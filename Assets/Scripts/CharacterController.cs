@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterController : MonoBehaviour
 {
@@ -15,10 +17,13 @@ public class CharacterController : MonoBehaviour
     public Transform isGroundedChecker; 
     public float checkGroundRadius; 
     public LayerMask groundLayer;
+    public Collider2D enemyCollider;
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        
         _rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -28,6 +33,7 @@ public class CharacterController : MonoBehaviour
     {
         Move();
         Jump();
+        Lose();
     }
 
     private void Move()
@@ -60,13 +66,28 @@ public class CharacterController : MonoBehaviour
             }
         }
     }
+
+    private void Lose()
+    {
+        if(transform.position.y <= -5)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        if (transform.Find("HealthPlayer").GetComponent<HealthPlayer>().health == 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
     
-    private bool IsGrounded() { 
+    private bool IsGrounded() {
+        return transform.Find("GroundChecker").GetComponent<GroundChecker>().IsGrounded;
+        /*
         Collider2D overlapCircle = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer); 
         if (overlapCircle != null) { 
             return true;
         }
         return false;
+        */
     }
     
     void OnDrawGizmosSelected()
@@ -74,5 +95,21 @@ public class CharacterController : MonoBehaviour
         // Draw a yellow sphere at the transform's position
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(isGroundedChecker.position, checkGroundRadius);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+           transform.Find("HealthPlayer").GetComponent<HealthPlayer>().health -= 1;
+           Physics2D.IgnoreCollision(GetComponent<Collider2D>(), enemyCollider, true);
+           StartCoroutine(EnableCollision(3));
+        }
+    }
+
+    private IEnumerator EnableCollision(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), enemyCollider, false);
     }
 }
