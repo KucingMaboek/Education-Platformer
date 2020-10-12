@@ -3,16 +3,16 @@ using UnityEngine.EventSystems;
 
 public class ButtonMoveRight : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public CharacterController characterController;
+    public PlayerController playerController;
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        characterController.IsMovingRight = true;
+        playerController.IsMovingRight = true;
     }
 
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        characterController.IsMovingRight = false;
+        playerController.IsMovingRight = false;
     }
 }

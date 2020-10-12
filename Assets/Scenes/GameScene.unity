@@ -196,7 +196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &262986932
 RectTransform:
   m_ObjectHideFlags: 0
@@ -268,7 +268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &327832839
 RectTransform:
   m_ObjectHideFlags: 0
@@ -474,7 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec2a019a7c8a744392af9d455c11465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 1809629361}
+  playerController: {fileID: 1809629361}
 --- !u!1 &870558699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,7 +1712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1f8de8e7fcc95245931ccc5ab528f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 1809629361}
+  playerController: {fileID: 1809629361}
 --- !u!1 &1130156077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,7 +1757,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ff8d94229deed43b12561289f4e8aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsGrounded: 0
 --- !u!61 &1130156080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1801,7 +1800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1177605312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1872,7 +1871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1211481352
 Transform:
   m_ObjectHideFlags: 0
@@ -1918,6 +1917,7 @@ GameObject:
   - component: {fileID: 1239172625}
   - component: {fileID: 1239172624}
   - component: {fileID: 1239172626}
+  - component: {fileID: 1239172627}
   m_Layer: 0
   m_Name: AirMonster
   m_TagString: Enemy
@@ -1981,14 +1981,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239172623}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.05, y: 0.38, z: -0.06493496}
+  m_LocalPosition: {x: 5.5, y: -0.75, z: -0.06493496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &1239172626
-CapsuleCollider2D:
+--- !u!61 &1239172626
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2001,8 +2001,31 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 1.29, y: 1.29}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
   m_Size: {x: 2.56, y: 2.56}
-  m_Direction: 0
+  m_EdgeRadius: 0
+--- !u!114 &1239172627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239172623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afad0c1360b4991a353938942d96737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &1452004085
 GameObject:
   m_ObjectHideFlags: 3
@@ -2300,7 +2323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baeb2ab0fdd78ae4aadf3d9afafdf69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 1809629361}
+  playerController: {fileID: 1809629361}
 --- !u!1 &1809629358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,8 +2338,8 @@ GameObject:
   - component: {fileID: 1809629362}
   - component: {fileID: 1809629363}
   m_Layer: 0
-  m_Name: Character
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2397,14 +2420,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e4614ae845b92244b60553df92f920a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 3
+  currentHealth: 0
+  invulnerableTime: 0.5
+  invulnerableCooldown: 0
   movementSpeed: 5
   jumpForce: 5
-  isGroundedChecker: {fileID: 1130156078}
-  checkGroundRadius: 0.1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 55
-  enemyCollider: {fileID: 1239172626}
+  isGrounded: 0
 --- !u!50 &1809629362
 Rigidbody2D:
   serializedVersion: 4

@@ -1,17 +1,28 @@
-﻿using System;
+﻿using Cinemachine;
 using UnityEngine;
 
 public class GroundChecker : MonoBehaviour
 {
-    public bool IsGrounded;
+    private PlayerController _playerController;
 
-    private void OnTriggerStay2D(Collider2D collider)
+    private void Start()
     {
-        IsGrounded = collider != null;
+        _playerController = GetComponentInParent<PlayerController>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // if (!other.CompareTag("Player"))
+        // {
+            _playerController.IsGrounded = true;
+        // }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        IsGrounded = false;
+        // if (!collision.CompareTag("Player"))
+        // {
+            _playerController.IsGrounded = false;
+        // }
     }
 }
