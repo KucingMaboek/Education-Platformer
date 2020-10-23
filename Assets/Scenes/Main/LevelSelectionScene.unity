@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 356373666}
   - component: {fileID: 356373665}
   m_Layer: 5
-  m_Name: Stage_4
+  m_Name: Stage4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 509213278}
   - component: {fileID: 509213277}
   m_Layer: 5
-  m_Name: Stage_1
+  m_Name: Stage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 735699654}
   - component: {fileID: 735699653}
   m_Layer: 5
-  m_Name: Button_Home
+  m_Name: ButtonHome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 777121165}
   - component: {fileID: 777121164}
   m_Layer: 5
-  m_Name: Background_Panel
+  m_Name: BackgroundPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,7 +770,7 @@ GameObject:
   - component: {fileID: 842865921}
   - component: {fileID: 842865920}
   m_Layer: 5
-  m_Name: Stage_3
+  m_Name: Stage3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -891,7 +891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1036425298}
   m_Layer: 5
-  m_Name: Chapter_Group
+  m_Name: ChapterGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -927,7 +927,7 @@ GameObject:
   - component: {fileID: 1147402185}
   - component: {fileID: 1147402184}
   m_Layer: 5
-  m_Name: Stage_5
+  m_Name: Stage5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1067,6 +1067,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a893152973e86843bcbd1ac9e05e910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio:
+    soundEffects: []
+    backgroundMusics: []
+    activeSfx: []
+    activeBgm: []
 --- !u!4 &1382307879
 Transform:
   m_ObjectHideFlags: 0
@@ -1221,7 +1226,7 @@ GameObject:
   - component: {fileID: 1860865154}
   - component: {fileID: 1860865153}
   m_Layer: 5
-  m_Name: Chapter_2
+  m_Name: Chapter2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1344,7 +1349,7 @@ GameObject:
   - component: {fileID: 1861830009}
   - component: {fileID: 1861830008}
   m_Layer: 5
-  m_Name: Stage_Container
+  m_Name: StageContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1499,7 +1504,7 @@ GameObject:
   - component: {fileID: 1963816163}
   - component: {fileID: 1963816162}
   m_Layer: 5
-  m_Name: Stage_2
+  m_Name: Stage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1623,7 +1628,7 @@ GameObject:
   - component: {fileID: 2051888218}
   - component: {fileID: 2051888217}
   m_Layer: 5
-  m_Name: Chapter_1
+  m_Name: Chapter1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1747,7 +1752,7 @@ GameObject:
   - component: {fileID: 2127315713}
   - component: {fileID: 2127315712}
   m_Layer: 5
-  m_Name: Chapter_3
+  m_Name: Chapter3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
