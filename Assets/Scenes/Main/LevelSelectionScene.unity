@@ -1198,6 +1198,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageContainer: {fileID: 1861830007}
   backgroundPanel: {fileID: 777121163}
+  chapterButtons:
+  - {fileID: 2051888217}
+  - {fileID: 1860865153}
+  - {fileID: 2127315712}
+  stageButtons:
+  - {fileID: 509213277}
+  - {fileID: 1963816162}
+  - {fileID: 842865920}
+  - {fileID: 356373665}
+  - {fileID: 1147402184}
 --- !u!1 &1860865151
 GameObject:
   m_ObjectHideFlags: 0
