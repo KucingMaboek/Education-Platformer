@@ -6,14 +6,16 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private float damage = 1;
     [SerializeField] private float speed = 2f;
-    [SerializeField] private float distance = 1f;
+    [SerializeField] private float distance = 0.5f;
+    [SerializeField] private LayerMask layerMask;
     private bool movingRight = true;
 
      private void FixedUpdate()
     {
         //GroundMonster AI Moving
         transform.Translate(Vector2.right * speed * Time.deltaTime);
-        RaycastHit2D groundinfo = Physics2D.Raycast(groundDetector.position, Vector2.down, distance);
+        //Layermask-ed raycast to Tile
+        RaycastHit2D groundinfo = Physics2D.Raycast(groundDetector.position, Vector2.down, distance, layerMask);
         if (groundinfo.collider == false)
         {
             if (movingRight == true)
