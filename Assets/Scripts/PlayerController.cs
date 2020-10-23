@@ -4,6 +4,8 @@ public class PlayerController : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
+
+    [SerializeField] private float coin = 0;
     [SerializeField] private float maxHealth = 3;
     [SerializeField] private float currentHealth;
     [SerializeField] private float invulnerableTime = 0.5f;
@@ -85,5 +87,13 @@ public class PlayerController : MonoBehaviour
     private void OnDeath()
     {
         // Not implemented yet
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Coin")){
+            Destroy(other.gameObject);
+            coin += 1;
+        }
     }
 }
