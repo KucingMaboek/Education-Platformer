@@ -21,6 +21,21 @@ public class UIController : MonoBehaviour
         container.gameObject.SetActive(false);
     }
     
+    public IEnumerator AnimationWideOut(RectTransform container, float duration)
+    {
+        container.gameObject.SetActive(true);
+        yield return new WaitForSecondsRealtime(0);
+        container.DOScale(new Vector3(1f, 1f, 1f), duration).SetUpdate(true);
+        container.DOAnchorPosY(0f, duration).SetUpdate(true);
+    }
+
+    public IEnumerator AnimationWideIn(RectTransform container, float duration)
+    {
+        container.DOScale(new Vector3(0f, 1f, 1f), duration).SetUpdate(true);
+        yield return new WaitForSecondsRealtime(duration);
+        container.gameObject.SetActive(false);
+    }
+    
     public void SceneLoader(string sceneName)
     {
         GameManager.Instance.NewScene = sceneName;

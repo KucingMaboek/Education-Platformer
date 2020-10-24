@@ -7,7 +7,6 @@ public class LevelLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(GameManager.Instance.NewScene);
         StartCoroutine(LoadAsynchronously());
     }
 
@@ -16,7 +15,6 @@ public class LevelLoader : MonoBehaviour
         AsyncOperation operation = SceneManager.LoadSceneAsync(GameManager.Instance.NewScene);
         while (!operation.isDone)
         {
-            Debug.Log(operation.progress);
             yield return null;
         }
     }
