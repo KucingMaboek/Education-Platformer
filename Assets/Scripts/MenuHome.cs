@@ -18,7 +18,7 @@ public class MenuHome : UIController
 
     private void InitiateGame()
     {
-        int chapterStatus = GameManager.Instance.data.GetChapterStatus(0);
+        int chapterStatus = GameManager.Instance.data.GetChapterStatus(1);
         if (chapterStatus == 0)
         {
             // level Init
