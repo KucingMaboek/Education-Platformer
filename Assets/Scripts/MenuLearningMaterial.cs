@@ -34,7 +34,7 @@ public class MenuLearningMaterial : UIController
 
     private void RefreshPage()
     {
-        // Contents 
+        // Contents & Title
         for (int i = 0; i < materials.Length; i++)
         {
             if (i == currentPage)
