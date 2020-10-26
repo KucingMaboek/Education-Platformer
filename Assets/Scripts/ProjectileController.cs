@@ -28,11 +28,15 @@ public class ProjectileController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Enemy" || other.tag == "Tile")
+        if (other.tag == "Enemy")
         {
             //GameObject e = Instantiate(explosion) as GameObject;
             //e.transform.position = transform.position;
             Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
+        else if (other.tag == "Tile")
+        {
             Destroy(this.gameObject);
         }
     }
