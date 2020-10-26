@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: 119f714a728ae1b4bb236c1e8fa1a1a3
+guid: 7cddcf82bb53109498d260c313083338
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: theme1-6_0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -71,11 +72,31 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: theme1-6_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89c0d142743ba344b658c213c200223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7c195244ed78dc9499e2b6b797ebdeef
+    spriteID: 8176b617a1181384d960d5ff2eda9324
     vertices: []
     indices: 
     edges: []
