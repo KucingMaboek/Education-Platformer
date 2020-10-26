@@ -4,12 +4,16 @@ public class PlayerController : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
+    public GameObject bulletPrefab;
+    public GameObject bulletPrefabLeft;
 
     [SerializeField] private float coin = 0;
     [SerializeField] private float maxHealth = 3;
     [SerializeField] private float currentHealth;
     [SerializeField] private float invulnerableTime = 0.5f;
     [SerializeField] private float invulnerableCooldown;
+    [SerializeField] private float ShootTime = 0.5f;
+    [SerializeField] private float ShootCooldown;
     [SerializeField] private float movementSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private bool isGrounded;
@@ -17,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     public bool IsMovingLeft { get; set; }
     public bool IsJumping { get; set; }
+
+    public bool IsShooting { get; set; }
 
     public bool IsGrounded
     {
@@ -37,9 +43,14 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         Jump();
+        Shoot();
         if (invulnerableCooldown > 0)
         {
             invulnerableCooldown -= Time.deltaTime;
+        }
+        if (ShootCooldown > 0)
+        {
+            ShootCooldown -= Time.deltaTime;
         }
     }
 
@@ -82,6 +93,28 @@ public class PlayerController : MonoBehaviour
             // Reset invulnerable cooldown
             invulnerableCooldown = invulnerableTime;
         }
+    }
+
+    public void Shoot()
+    {
+        if (IsShooting)
+        {
+            if (ShootCooldown <= 0)
+            {
+                if (_spriteRenderer.flipX == true)
+                {
+                    GameObject projectile = Instantiate(bulletPrefabLeft) as GameObject;
+                    projectile.transform.position = transform.position;
+                    ShootCooldown = ShootTime;
+                }
+                else if (_spriteRenderer.flipX == false)
+                {
+                    GameObject projectile = Instantiate(bulletPrefab) as GameObject;
+                    projectile.transform.position = transform.position;
+                    ShootCooldown = ShootTime;                
+                }
+            }            
+        }        
     }
 
     private void OnDeath()
