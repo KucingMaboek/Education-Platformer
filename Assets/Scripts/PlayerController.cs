@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject bulletPrefabLeft;
     private Animator _anim;
+    private Renderer _render;
 
     [SerializeField] private float coin = 0;
     [SerializeField] private float maxHealth = 3;
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
+        _render = GetComponent<Renderer>();
         currentHealth = maxHealth;
     }
 
@@ -109,13 +111,15 @@ public class PlayerController : MonoBehaviour
                 if (_spriteRenderer.flipX == true)
                 {
                     GameObject projectile = Instantiate(bulletPrefabLeft) as GameObject;
-                    projectile.transform.position = transform.position;
+                    //projectile.transform.position = transform.position;
+                    projectile.transform.position = _render.bounds.center;
                     ShootCooldown = ShootTime;
                 }
                 else if (_spriteRenderer.flipX == false)
                 {
                     GameObject projectile = Instantiate(bulletPrefab) as GameObject;
-                    projectile.transform.position = transform.position;
+                    //projectile.transform.position = transform.position;
+                    projectile.transform.position = _render.bounds.center;
                     ShootCooldown = ShootTime;                
                 }
             }            
@@ -127,6 +131,7 @@ public class PlayerController : MonoBehaviour
         // Not implemented yet
     }
 
+    //Pickup Coin
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Coin")){
