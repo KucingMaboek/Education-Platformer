@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 4ec54c7a89ad89744af07d0bc471cb94
+guid: 896f84b07e38cb24e958271f473a0ab7
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: chara-idle-single_0
-    21300002: chara-idle-single_1
-    21300004: chara-idle-single_2
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -43,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -74,71 +71,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: chara-idle-single_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 443
-        height: 411
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63c15f6e4ed01794d87cb6387e9c7bfd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara-idle-single_1
-      rect:
-        serializedVersion: 2
-        x: 545
-        y: 0
-        width: 443
-        height: 399
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf3c941b435d8a643b37bc7ef74d3e51
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chara-idle-single_2
-      rect:
-        serializedVersion: 2
-        x: 1083
-        y: 0
-        width: 442
-        height: 392
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54fc0fbe188989d40bb1e3d4c35ea755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 06c88b0bf5206c5458656eabe02de507
+    spriteID: e5f9463ea20e23b4db751761b4d6c35f
     vertices: []
     indices: 
     edges: []

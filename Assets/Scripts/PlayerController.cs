@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D _rb;
     public GameObject bulletPrefab;
     public GameObject bulletPrefabLeft;
+    private Animator _anim;
 
     [SerializeField] private float coin = 0;
     [SerializeField] private float maxHealth = 3;
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _anim = GetComponent<Animator>();
         currentHealth = maxHealth;
     }
 
@@ -60,15 +62,18 @@ public class PlayerController : MonoBehaviour
         {
             _rb.velocity = new Vector2(movementSpeed, _rb.velocity.y);
             _spriteRenderer.flipX = false;
+            _anim.SetBool("IsWalking", true);
         }
         else if (IsMovingLeft)
         {
             _rb.velocity = new Vector2(-movementSpeed, _rb.velocity.y);
             _spriteRenderer.flipX = true;
+            _anim.SetBool("IsWalking", true);
         }
         else
         {
             _rb.velocity = new Vector2(0, _rb.velocity.y);
+            _anim.SetBool("IsWalking", false);
         }
     }
 

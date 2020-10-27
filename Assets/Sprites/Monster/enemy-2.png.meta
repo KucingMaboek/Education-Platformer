@@ -1,10 +1,12 @@
 fileFormatVersion: 2
-guid: 4ec54c7a89ad89744af07d0bc471cb94
+guid: 701260d061bdd7f408837a9acc2903fd
 TextureImporter:
   fileIDToRecycleName:
-    21300000: chara-idle-single_0
-    21300002: chara-idle-single_1
-    21300004: chara-idle-single_2
+    21300000: enemy-2_0
+    21300002: enemy-2_1
+    21300004: enemy-2_2
+    21300006: enemy-2_3
+    21300008: enemy-2_4
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -48,7 +50,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,13 +78,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chara-idle-single_0
+      name: enemy-2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 443
-        height: 411
+        y: 638
+        width: 379
+        height: 477
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -90,19 +92,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63c15f6e4ed01794d87cb6387e9c7bfd
+      spriteID: 8378596397670e045963fc3a00008380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chara-idle-single_1
+      name: enemy-2_1
       rect:
         serializedVersion: 2
-        x: 545
-        y: 0
-        width: 443
-        height: 399
+        x: 634
+        y: 635
+        width: 378
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,19 +112,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf3c941b435d8a643b37bc7ef74d3e51
+      spriteID: a2a584c5a1863e14eb7bd2061b730b3c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chara-idle-single_2
+      name: enemy-2_2
       rect:
         serializedVersion: 2
-        x: 1083
-        y: 0
-        width: 442
-        height: 392
+        x: 1275
+        y: 633
+        width: 379
+        height: 482
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,7 +132,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54fc0fbe188989d40bb1e3d4c35ea755
+      spriteID: c87cc711097c7694fabdd2f23f11a04e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-2_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 379
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882780a8fb965434e928ebfcd109930a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-2_4
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 378
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047d69dd8e7d46445819f4c482c63989
       vertices: []
       indices: 
       edges: []
@@ -138,7 +180,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 06c88b0bf5206c5458656eabe02de507
+    spriteID: e6fbb093305e8f0428241d6dee65da53
     vertices: []
     indices: 
     edges: []
