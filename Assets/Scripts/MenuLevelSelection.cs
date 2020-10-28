@@ -7,7 +7,7 @@ public class MenuLevelSelection : UIController
     private int chapter;
     [SerializeField] private RectTransform stageContainer;
     [SerializeField] private GameObject backgroundPanel;
-    [SerializeField] private Button[] chapterButtons;
+    [SerializeField] private GameObject[] chapterButtons;
     [SerializeField] private Button[] stageButtons;
 
     private void Start()
@@ -17,7 +17,8 @@ public class MenuLevelSelection : UIController
             int chapterStatus = GameManager.Instance.data.GetChapterStatus(i);
             if (chapterStatus == 0)
             {
-                chapterButtons[i-1].interactable = false;
+                chapterButtons[i-1].GetComponent<Button>().interactable = false;
+                chapterButtons[i-1].transform.GetChild(0).gameObject.SetActive(true);
             }
         }
     }

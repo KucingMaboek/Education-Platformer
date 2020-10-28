@@ -57,9 +57,11 @@ public class MenuLearningMaterial : UIController
             if (currentPage == 0)
             {
                 prevButton.interactable = false;
+                nextButton.interactable = true;
             }
             else if (currentPage == materials.Length-1)
             {
+                prevButton.interactable = true;
                 nextButton.interactable = false;
             }
             else

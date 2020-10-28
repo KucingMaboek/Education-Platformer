@@ -1,11 +1,8 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class MenuHome : UIController
 {
-    [SerializeField] private Text sfxVolumeText;
-    [SerializeField] private Text bgmVolumeText;
     [SerializeField] private Slider sfxSlider;
     [SerializeField] private Slider bgmSlider;
     [SerializeField] private RectTransform settingContainer;
@@ -32,9 +29,7 @@ public class MenuHome : UIController
         
         // UI Init
         sfxSlider.value = GameManager.Instance.setting.SfxVolume;
-        sfxVolumeText.text = Convert.ToInt32(GameManager.Instance.setting.SfxVolume * 100f) + "%";
         bgmSlider.value = GameManager.Instance.setting.BgmVolume;
-        bgmVolumeText.text = Convert.ToInt32(GameManager.Instance.setting.BgmVolume * 100f) + "%";
     }
     
     public void OpenSetting()
@@ -52,12 +47,10 @@ public class MenuHome : UIController
     public void SetSfxVolume()
     {
         GameManager.Instance.setting.SfxVolume = sfxSlider.value;
-        sfxVolumeText.text = Convert.ToInt32(GameManager.Instance.setting.SfxVolume * 100f) + "%";
     }
     
     public void SetBgmVolume()
     {
         GameManager.Instance.setting.BgmVolume = bgmSlider.value;
-        bgmVolumeText.text = Convert.ToInt32(GameManager.Instance.setting.BgmVolume * 100f) + "%";
     }
 }

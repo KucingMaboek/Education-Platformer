@@ -24,10 +24,17 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="BossChp1.cs" t="Include" />
+          <e p="BossChp1Projectile.cs" t="Include" />
+          <e p="BossChp2.cs" t="Include" />
+          <e p="BossChp3.cs" t="Include" />
           <e p="ButtonJump.cs" t="Include" />
           <e p="ButtonMoveLeft.cs" t="Include" />
           <e p="ButtonMoveRight.cs" t="Include" />
+          <e p="ButtonShoot.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
+          <e p="EnemyControllerAir.cs" t="Include" />
+          <e p="EnemyControllerStill.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="GroundChecker.cs" t="Include" />
           <e p="HealthPlayer.cs" t="Include" />
@@ -35,7 +42,10 @@
           <e p="MenuHome.cs" t="Include" />
           <e p="MenuLearningMaterial.cs" t="Include" />
           <e p="MenuLevelSelection.cs" t="Include" />
+          <e p="NewBehaviourScript.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="ProjectileController.cs" t="Include" />
+          <e p="ProjectileControllerLeft.cs" t="Include" />
           <e p="UIController.cs" t="Include" />
         </e>
         <e p="Third_Party" t="Include">
