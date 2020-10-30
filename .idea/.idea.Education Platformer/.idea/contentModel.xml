@@ -36,9 +36,11 @@
           <e p="EnemyControllerAir.cs" t="Include" />
           <e p="EnemyControllerStill.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GameplayManager.cs" t="Include" />
           <e p="GroundChecker.cs" t="Include" />
           <e p="HealthPlayer.cs" t="Include" />
           <e p="LevelLoader.cs" t="Include" />
+          <e p="MenuGameplay.cs" t="Include" />
           <e p="MenuHome.cs" t="Include" />
           <e p="MenuLearningMaterial.cs" t="Include" />
           <e p="MenuLevelSelection.cs" t="Include" />
@@ -46,6 +48,8 @@
           <e p="PlayerController.cs" t="Include" />
           <e p="ProjectileController.cs" t="Include" />
           <e p="ProjectileControllerLeft.cs" t="Include" />
+          <e p="Quest.cs" t="Include" />
+          <e p="QuestObject.cs" t="Include" />
           <e p="UIController.cs" t="Include" />
         </e>
         <e p="Third_Party" t="Include">
