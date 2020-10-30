@@ -27,7 +27,7 @@ public class BossChp1 : MonoBehaviour
         //testing purpose, main purpose is run BossShoot() when player is around boss
         if (Input.GetKeyDown("a"))
         {
-            Debug.Log("Shot");
+            Debug.Log("From Script BossChp1");
             BossShoot();
         }
     }
