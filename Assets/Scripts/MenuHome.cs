@@ -6,8 +6,9 @@ public class MenuHome : UIController
     [SerializeField] private Slider sfxSlider;
     [SerializeField] private Slider bgmSlider;
     [SerializeField] private RectTransform settingContainer;
+    [SerializeField] private RectTransform creditContainer;
     [SerializeField] private GameObject backgroundPanel;
-    
+
     private void Start()
     {
         InitiateGame();
@@ -21,17 +22,17 @@ public class MenuHome : UIController
             // level Init
             GameManager.Instance.data.SetChapterStatus(1, 1);
             GameManager.Instance.data.SetStageStatus(1, 1, 1);
-            
+
             // Audio Init
             GameManager.Instance.setting.SfxVolume = 1f;
             GameManager.Instance.setting.BgmVolume = 1f;
         }
-        
+
         // UI Init
         sfxSlider.value = GameManager.Instance.setting.SfxVolume;
         bgmSlider.value = GameManager.Instance.setting.BgmVolume;
     }
-    
+
     public void OpenSetting()
     {
         backgroundPanel.SetActive(true);
@@ -43,14 +44,32 @@ public class MenuHome : UIController
         backgroundPanel.SetActive(false);
         StartCoroutine(AnimationWideIn(settingContainer, 0.15f));
     }
-    
+
+    public void OpenCredit()
+    {
+        backgroundPanel.SetActive(true);
+        StartCoroutine(AnimationWideOut(creditContainer, 0.15f));
+    }
+
+    public void CloseCredit()
+    {
+        backgroundPanel.SetActive(false);
+        StartCoroutine(AnimationWideIn(creditContainer, 0.15f));
+    }
+
     public void SetSfxVolume()
     {
-        GameManager.Instance.setting.SfxVolume = sfxSlider.value;
+        GameManager.Instance.setting.SfxVolume *= -1;
     }
-    
+
     public void SetBgmVolume()
     {
-        GameManager.Instance.setting.BgmVolume = bgmSlider.value;
+        GameManager.Instance.setting.BgmVolume *= -1;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit");
     }
 }

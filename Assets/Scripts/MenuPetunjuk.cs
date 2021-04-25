@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MenuLearningMaterial : UIController
+public class MenuPetunjuk : UIController
 {
     [SerializeField] private Material[] materials;
     [SerializeField] private Text pageText;
