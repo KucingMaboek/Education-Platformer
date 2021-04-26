@@ -5,6 +5,7 @@ using UnityEngine;
 public class ProjectileController : MonoBehaviour
 {
     [SerializeField] private float speed = 8.0f;
+    [SerializeField] private float life = 0.6f;
     private Rigidbody2D rb;
     private Vector2 screenBounds;
 
@@ -21,7 +22,11 @@ public class ProjectileController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x > screenBounds.x)
+        if (life > 0)
+        {
+            life -= Time.deltaTime;
+        }
+        if (life < 0)
         {
             Destroy(this.gameObject);
         }

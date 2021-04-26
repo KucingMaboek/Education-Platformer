@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float coin = 0;
     [SerializeField] private float maxHealth = 3;
     [SerializeField] private float currentHealth;
-    [SerializeField] private float invulnerableTime = 0.5f;
+    [SerializeField] private float invulnerableTime = 1.5f;
     [SerializeField] private float invulnerableCooldown;
     [SerializeField] private float ShootTime = 0.5f;
     [SerializeField] private float ShootCooldown;

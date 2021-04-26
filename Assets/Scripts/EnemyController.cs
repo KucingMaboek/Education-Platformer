@@ -3,6 +3,7 @@
 public class EnemyController : MonoBehaviour
 {
     public Transform groundDetector;
+    public GameObject prefabCoin;
 
     [SerializeField] private float damage = 1;
     [SerializeField] private float speed = 2f;
