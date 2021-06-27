@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Coin
   - Tile
+  - Projectile
+  - Deadzone
   layers:
   - Default
   - TransparentFX

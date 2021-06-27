@@ -9,6 +9,7 @@ public class MenuLevelSelection : UIController
     [SerializeField] private GameObject backgroundPanel;
     [SerializeField] private GameObject[] chapterButtons;
     [SerializeField] private Button[] stageButtons;
+    [SerializeField] private Text[] stageStarTexts;
 
     private void Start()
     {
@@ -19,6 +20,10 @@ public class MenuLevelSelection : UIController
             {
                 chapterButtons[i-1].GetComponent<Button>().interactable = false;
                 chapterButtons[i-1].transform.GetChild(0).gameObject.SetActive(true);
+            } 
+            else
+            {
+                chapterButtons[i - 1].GetComponent<Button>().interactable = true;
             }
         }
     }
@@ -33,6 +38,14 @@ public class MenuLevelSelection : UIController
             {
                 stageButtons[i-1].interactable = false;
             }
+            else
+            {
+                stageButtons[i - 1].interactable = true;
+                stageButtons[i - 1].transform.GetChild(0).gameObject.SetActive(false);
+            }
+
+            int starCount = GameManager.Instance.data.GetStageQuestStatus(this.chapter, i);
+            stageStarTexts[i - 1].text = starCount.ToString();
         }
         backgroundPanel.SetActive(true);
         StartCoroutine(AnimationWideOut(stageContainer, 0.15f));

@@ -55,7 +55,6 @@ public class EnemyControllerAir : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D other)
     {
-        Debug.Log("Hit " + other.gameObject.name);
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<PlayerController>().DealDamage(damage);

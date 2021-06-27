@@ -7,11 +7,19 @@ public class MenuHome : UIController
     [SerializeField] private Slider bgmSlider;
     [SerializeField] private RectTransform settingContainer;
     [SerializeField] private RectTransform creditContainer;
-    [SerializeField] private GameObject backgroundPanel;
+    [SerializeField] private GameObject backgroundPanel, SFXButton, MusicButton, SFXButtonDis, MusicButtonDis;
+
+    private bool SFX = true;
+    private bool Music = true;
 
     private void Start()
     {
+        GameManager.Instance.PlayBgm("menu_theme");
         InitiateGame();
+        /*for (int i = 0; i < 20; i++)
+        {
+            Debug.Log(GameManager.Instance.data.GetChapterStatus(i));
+        }*/
     }
 
     private void InitiateGame()
@@ -29,8 +37,19 @@ public class MenuHome : UIController
         }
 
         // UI Init
-        sfxSlider.value = GameManager.Instance.setting.SfxVolume;
-        bgmSlider.value = GameManager.Instance.setting.BgmVolume;
+        if (GameManager.Instance.setting.BgmVolume == 0)
+        {
+            MusicButton.SetActive(false);
+            MusicButtonDis.SetActive(true);
+            Music = false;
+        }
+
+        if (GameManager.Instance.setting.SfxVolume == 0)
+        {
+            SFXButton.SetActive(false);
+            SFXButtonDis.SetActive(true);
+            SFX = false;
+        }
     }
 
     public void OpenSetting()
@@ -59,17 +78,80 @@ public class MenuHome : UIController
 
     public void SetSfxVolume()
     {
-        GameManager.Instance.setting.SfxVolume *= -1;
+        if (GameManager.Instance.setting.SfxVolume == 0)
+        {
+            GameManager.Instance.setting.SfxVolume = 1;
+        }
+        else
+        {
+            GameManager.Instance.setting.SfxVolume = 0;
+        }
     }
 
     public void SetBgmVolume()
     {
-        GameManager.Instance.setting.BgmVolume *= -1;
+        if (GameManager.Instance.setting.BgmVolume == 0)
+        {
+            GameManager.Instance.setting.BgmVolume = 1;
+        }
+        else
+        {
+            GameManager.Instance.setting.BgmVolume = 0;
+        }
+    }
+
+    public void SwapSFXButton()
+    {
+        if (SFX)
+        {
+            SFXButton.SetActive(false);
+            SFXButtonDis.SetActive(true);
+            SFX = false;
+        }
+        else
+        {
+            SFXButton.SetActive(true);
+            SFXButtonDis.SetActive(false);
+            SFX = true;
+        }
+    }
+
+    public void SwapMusicButton()
+    {
+        if (Music)
+        {
+            MusicButton.SetActive(false);
+            MusicButtonDis.SetActive(true);
+            Music = false;
+        }
+        else
+        {
+            MusicButton.SetActive(true);
+            MusicButtonDis.SetActive(false);
+            Music = true;
+        }
     }
 
     public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("Quit");
+        //ResetData();
+        //Debug.Log("Quit");
+    }
+
+    public void ResetData()
+    {
+        GameManager.Instance.data.SetChapterStatus(1, 0);
+        GameManager.Instance.data.SetChapterStatus(2, 0);
+        for (int i = 1; i < 6; i++)
+        {
+            GameManager.Instance.data.SetStageStatus(1, i, 0);
+            GameManager.Instance.data.SetStageQuestStatus(1, i, 0);
+        }
+        for (int i = 1; i < 6; i++)
+        {
+            GameManager.Instance.data.SetStageStatus(2, i, 0);
+            GameManager.Instance.data.SetStageQuestStatus(2, i, 0);
+        }
     }
 }

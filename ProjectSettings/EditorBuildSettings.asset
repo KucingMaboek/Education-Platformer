@@ -18,9 +18,33 @@ EditorBuildSettings:
     path: Assets/Scenes/Main/LevelSelectionScene.unity
     guid: 73ddc2bde3abe9c4cb629926bc243cc8
   - enabled: 1
-    path: Assets/Scenes/Main/GameScene.unity
-    guid: c123b94d8c22b4e41821efcd4bad51ad
-  - enabled: 1
     path: Assets/Scenes/Levels/Chapter_1/Chapter_1_Stage_1.unity
     guid: f86565f0e5854bc4bbe6198c38b84c99
+  - enabled: 1
+    path: Assets/Scenes/Levels/Chapter_1/Chapter_1_Stage_2.unity
+    guid: ede2d2dde4492f6418ac19ffac3740bb
+  - enabled: 1
+    path: Assets/Scenes/Levels/Chapter_1/Chapter_1_Stage_3.unity
+    guid: cd926981f224f794f92edd281a2d2b0e
+  - enabled: 1
+    path: Assets/Scenes/Levels/Chapter_1/Chapter_1_Stage_4.unity
+    guid: 5c2284d132962e54ab40056e064a08e6
+  - enabled: 1
+    path: Assets/Scenes/Levels/Chapter_1/Chapter_1_Stage_5.unity
+    guid: 02610f86571783042ae99602a9c2a916
+  - enabled: 1
+    path: Assets/Scenes/Levels/Chapter_2/Chapter_2_Stage_1.unity
+    guid: 3a84fa895190a744a87471248bada4e4
+  - enabled: 1
+    path: Assets/Scenes/Levels/Chapter_2/Chapter_2_Stage_2.unity
+    guid: 2c5de25fb844b7549874291fb67524ca
+  - enabled: 1
+    path: Assets/Scenes/Levels/Chapter_2/Chapter_2_Stage_3.unity
+    guid: 4da9566217f4a32488acb9a2cb2c9a7e
+  - enabled: 1
+    path: Assets/Scenes/Levels/Chapter_2/Chapter_2_Stage_4.unity
+    guid: 43341795cca1aa64cb7ef84eea75f9d4
+  - enabled: 1
+    path: Assets/Scenes/Levels/Chapter_2/Chapter_2_Stage_5.unity
+    guid: 70433b9d160a2e042bb948af2a44c524
   m_configObjects: {}

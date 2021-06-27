@@ -27,7 +27,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SetupAudio();
-        PlayBgm("menu_theme");
     }
 
     private void Update()
@@ -122,6 +121,16 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("Chapter_" + chapter + "_Stage_" + stage, status);
         }
+
+        public void SetStageQuestStatus(int chapter, int stage, int status)
+        {
+            PlayerPrefs.SetInt("Quest Chapter_" + chapter + "_Stage_" + stage, status);
+        }
+
+        public int GetStageQuestStatus(int chapter, int stage)
+        {
+            return PlayerPrefs.GetInt("Quest Chapter_" + chapter + "_Stage_" + stage);
+        }
     }
 
     public class Setting
@@ -138,13 +147,26 @@ public class GameManager : MonoBehaviour
             set { PlayerPrefs.SetFloat("bgmVolume", value); }
         }
 
+        public float SfxStatus
+        {
+            get { return PlayerPrefs.GetInt("sfxStatus"); }
+            set { PlayerPrefs.SetInt("sfxStatus", (int)value); }
+        }
+
+        public float BgmStatus
+        {
+            get { return PlayerPrefs.GetInt("bgmStatus"); }
+            set { PlayerPrefs.SetInt("bgmStatus", (int)value); }
+        }
+
+
         public int Vibration
         {
-            get { return PlayerPrefs.GetInt("Vibration");}
-            set{ PlayerPrefs.SetInt("Vibration", value);}
+            get { return PlayerPrefs.GetInt("Vibration"); }
+            set { PlayerPrefs.SetInt("Vibration", value); }
         }
     }
-    
+
     [Serializable]
     public class Audio
     {

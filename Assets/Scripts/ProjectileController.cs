@@ -6,6 +6,7 @@ public class ProjectileController : MonoBehaviour
 {
     [SerializeField] private float speed = 8.0f;
     [SerializeField] private float life = 0.6f;
+
     private Rigidbody2D rb;
     private Vector2 screenBounds;
 

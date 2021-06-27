@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
-    public GameObject bulletPrefab;
-    public GameObject bulletPrefabLeft;
+    public GameObject bulletPrefab, bulletPrefabLeft, PauseWindow, BGPanelLose;
     private Animator _anim;
     private Renderer _render;
+
+    public Image[] hearts;
+    public Sprite fullHearts;
+    public Sprite emptyHearts;
 
     [SerializeField] private float coin = 0;
     [SerializeField] private float maxHealth = 3;
@@ -20,12 +24,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private bool isGrounded;
     public bool IsMovingRight { get; set; }
-
     public bool IsMovingLeft { get; set; }
     public bool IsJumping { get; set; }
-
     public bool IsShooting { get; set; }
-
     public bool IsGrounded
     {
         get => isGrounded;
@@ -50,6 +51,7 @@ public class PlayerController : MonoBehaviour
         Shoot();
         if (invulnerableCooldown > 0)
         {
+            
             invulnerableCooldown -= Time.deltaTime;
         }
         if (ShootCooldown > 0)
@@ -84,6 +86,7 @@ public class PlayerController : MonoBehaviour
         if (IsJumping && IsGrounded)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
+            GameManager.Instance.PlaySfx("button_jump");
         }
     }
     public void DealDamage(float damage)
@@ -100,6 +103,7 @@ public class PlayerController : MonoBehaviour
             // Reset invulnerable cooldown
             invulnerableCooldown = invulnerableTime;
         }
+        updateHealth();
     }
 
     public void Shoot()
@@ -108,6 +112,7 @@ public class PlayerController : MonoBehaviour
         {
             if (ShootCooldown <= 0)
             {
+                GameManager.Instance.PlaySfx("button_shot");
                 if (_spriteRenderer.flipX == true)
                 {
                     GameObject projectile = Instantiate(bulletPrefabLeft) as GameObject;
@@ -126,17 +131,49 @@ public class PlayerController : MonoBehaviour
         }        
     }
 
+    private void updateHealth()
+    {
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < currentHealth)
+            {
+                hearts[i].sprite = fullHearts;
+            }
+            else
+            {
+                hearts[i].sprite = emptyHearts;
+            }
+
+            if (i < currentHealth)
+            {
+                hearts[i].enabled = true;
+            }
+            else
+            {
+                hearts[i].enabled = false;
+            }
+        }
+    }
+
+
     private void OnDeath()
     {
-        // Not implemented yet
+        Time.timeScale = 0f;
+        BGPanelLose.SetActive(true);
+        PauseWindow.SetActive(true);
     }
 
     //Pickup Coin
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Coin")){
-            Destroy(other.gameObject);
-            coin += 1;
+        if (other.tag == "Deadzone")
+        {
+            OnDeath();
         }
     }
 }
