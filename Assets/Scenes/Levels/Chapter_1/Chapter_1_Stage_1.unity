@@ -1465,12 +1465,12 @@ PrefabInstance:
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.2
+      value: 51.42
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 2.71
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
@@ -1554,12 +1554,12 @@ PrefabInstance:
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.05
+      value: 91.23
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.45
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
@@ -10198,8 +10198,13 @@ PrefabInstance:
       value: 'Feedback: Soal 1:
 
         Semprotan pengharum ruangan merupakan benda
-        cair, apabila dibiarkan di udara terbuka akan mengalami penguapan dan menjadi
-        gas. Perubahan wujud dari cair menjadi gas disebut penguapan.'
+        berwujud cair, apabila disemprotkan
+
+        dan dibiarkan diudara terbuka
+        pengharum ruangan yang berwujud cair akan mengalami
+
+        penguapan sehingga
+        berubah menjadi gas. Perubahan wujud dari cair menjadi gas disebut penguapan.'
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -10213,18 +10218,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
       propertyPath: m_textInfo.lineCount
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 27
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 201
+      value: 276
+      objectReference: {fileID: 0}
+    - target: {fileID: 1716952715190980693, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2295924591438585729, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -10366,10 +10386,144 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3568525195479604854, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3587397895607113802, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: dcff8d2e8603fbb4abb25bacd32bb1b6,
+        type: 3}
     - target: {fileID: 3602767896413818765, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483239065290464285, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_text
+      value: "Soal 1\nIbu menyemprotkan pengharum ruangan keseluruh kamar Rike sehingga
+        harumnya menyebar keseluruh ruangan, berdasarkan ilustrasi tersebut jenis
+        perubahan wujud yang terjadi adalah ....\n\nA. Menyublim\r\nB. Membeku\r\nC.
+        Mengembun\r\nD. Menguap\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237992960179830435, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237992960179830435, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237992960179830435, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237992960179830435, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237992960179830435, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283821932394960824, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283821932394960824, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283821932394960824, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283821932394960824, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283821932394960824, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663134649735044278, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663134649735044278, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663134649735044278, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663134649735044278, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663134649735044278, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663134649735044278, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 845
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663134649735044278, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 435
       objectReference: {fileID: 0}
     - target: {fileID: 8953062609480393743, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -10576,7 +10730,7 @@ PrefabInstance:
         ...
 
 
-        A. Pengembunnan
+        A. Pengembunan
 
         B. Penguapan
 
@@ -10663,7 +10817,7 @@ PrefabInstance:
         ...
 
 
-        A. Pengembunnan
+        A. Pengembunan
 
         B. Penguapan
 
@@ -10684,6 +10838,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
+      propertyPath: m_text
+      value: "Soal 1\nIbu menyemprotkan pengharum ruangan keseluruh kamar Rike sehingga
+        harumnya menyebar keseluruh ruangan, berdasarkan ilustrasi tersebut jenis
+        perubahan wujud yang terjadi adalah ....\n\nA. Menyublim\r\nB. Membeku\r\nC.
+        Mengembun\r\nD. Menguap\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
       propertyPath: m_fontSize
       value: 45
       objectReference: {fileID: 0}
@@ -10694,8 +10856,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 7
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611371457856, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}

@@ -2251,8 +2251,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -321.79, y: 146}
-  m_SizeDelta: {x: 643.57776, y: 333.13208}
+  m_AnchoredPosition: {x: -304.4, y: 128.5}
+  m_SizeDelta: {x: 898.9896, y: 465.33966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &73956425588600201
 GameObject:
@@ -2291,7 +2291,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3f1fab26f3adf3b47a08d19404c99eeb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5d2069af35677042895aee25a4dddeb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2320,7 +2320,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd1280066fd5a0a4d8bb279392aeb3b6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f39158cf68bdd9a41a909e44513a0427, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2558,45 +2558,30 @@ PrefabInstance:
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_text
-      value: 'Soal 11
-
-        Perhatikan gambar bagan di bawah ini!
-
-
-
-
-
-
-
-        Analisislah
+      value: "Soal 11\nPerhatikan gambar bagan di bawah ini!\n\n\n\n\n\n\n\n\n\nAnalisislah
         perubahan wujud apa yang terjadi. Peristiwa yang terjadi pada no 1, 4, dan
-        5 adalah ....
-
-
-        A. menyublim, mencair, membeku
-
-        B. membeku,
-        mencair, menguap
-
-        C. menguap, menyublim, mengkristal
-
-        D.
-        mencair, menyublim, mengembun'
+        5 adalah ....\n\nA. menyublim, mencair, membeku \tC. menguap, menyublim,
+        deposisi\nB. membeku, mencair, menguap\tD. mencair, menyublim, mengembun\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSize
-      value: 55
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 55
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -2606,17 +2591,17 @@ PrefabInstance:
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 47
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 281
+      value: 283
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 249
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8953062609480393743, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -2928,45 +2913,35 @@ PrefabInstance:
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_text
-      value: 'Soal 11
-
-        Perhatikan gambar bagan di bawah ini!
-
-
-
-
-
-
-
-        Analisislah
+      value: "Soal 11\nPerhatikan gambar bagan di bawah ini!\n\n\n\n\n\n\n\n\n\nAnalisislah
         perubahan wujud apa yang terjadi. Peristiwa yang terjadi pada no 1, 4, dan
-        5 adalah ....
-
-
-        A. menyublim, mencair, membeku
-
-        B. membeku,
-        mencair, menguap
-
-        C. menguap, menyublim, mengkristal
-
-        D.
-        mencair, menyublim, mengembun'
+        5 adalah ....\n\nA. menyublim, mencair, membeku \t\tC. menguap, menyublim,
+        deposisi\nB. membeku, mencair, menguap\t\tD. mencair, menyublim, mengembun\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSize
-      value: 48
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -4.980097
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 48
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -2976,12 +2951,12 @@ PrefabInstance:
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 47
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 281
+      value: 285
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -3664,12 +3639,12 @@ PrefabInstance:
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.34
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.29
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
@@ -3789,12 +3764,12 @@ PrefabInstance:
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.96
+      value: 80.52
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: -1.84
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
@@ -3868,7 +3843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd1280066fd5a0a4d8bb279392aeb3b6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f39158cf68bdd9a41a909e44513a0427, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9556,8 +9531,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -529.8, y: 140.4}
-  m_SizeDelta: {x: 595.29614, y: 308.14026}
+  m_AnchoredPosition: {x: -467.82, y: 75}
+  m_SizeDelta: {x: 841.46045, y: 435.5611}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7159289806018129055
 CanvasRenderer:

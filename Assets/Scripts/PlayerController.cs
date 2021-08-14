@@ -62,13 +62,13 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        if (IsMovingRight)
+        if (IsMovingRight || Input.GetKey(KeyCode.RightArrow))
         {
             _rb.velocity = new Vector2(movementSpeed, _rb.velocity.y);
             _spriteRenderer.flipX = false;
             _anim.SetBool("IsWalking", true);
         }
-        else if (IsMovingLeft)
+        else if (IsMovingLeft || Input.GetKey(KeyCode.LeftArrow))
         {
             _rb.velocity = new Vector2(-movementSpeed, _rb.velocity.y);
             _spriteRenderer.flipX = true;
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if (IsJumping && IsGrounded)
+        if ((Input.GetKey(KeyCode.UpArrow) || IsJumping) && IsGrounded)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
             GameManager.Instance.PlaySfx("button_jump");
@@ -108,11 +108,11 @@ public class PlayerController : MonoBehaviour
 
     public void Shoot()
     {
-        if (IsShooting)
+        if (Input.GetKey(KeyCode.Space) || IsShooting)
         {
             if (ShootCooldown <= 0)
             {
-                GameManager.Instance.PlaySfx("button_shot");
+                
                 if (_spriteRenderer.flipX == true)
                 {
                     GameObject projectile = Instantiate(bulletPrefabLeft) as GameObject;
@@ -127,6 +127,7 @@ public class PlayerController : MonoBehaviour
                     projectile.transform.position = _render.bounds.center;
                     ShootCooldown = ShootTime;                
                 }
+                GameManager.Instance.PlaySfx("button_shot");
             }            
         }        
     }

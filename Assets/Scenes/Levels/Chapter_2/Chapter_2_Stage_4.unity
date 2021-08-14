@@ -3330,12 +3330,14 @@ PrefabInstance:
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_text
-      value: "Feedback: Soal 17:\nProses terjadinya hujan salju sama seperti terjadinya
-        hujan, uap air berkumpul menjadi awan. Uap air terus bertambah sehingga massanya
-        pun juga bertambah, sehingga ketika udara tidak kuat lagi maka awan tersebut
-        akan pecah dengan menyebarkan partikel- partikel air. Namun karena suhu pada
-        wilayah kurang dari 0 derajad celcius, maka titik-titik air yang turun menjadi
-        salju.\r"
+      value: 'Feedback: Soal 17:
+
+        Proses terjadinya hujan salju sama seperti
+        terjadinya hujan tetapi karena perbedaan wilayah juga dapat mempengaruhi
+        terjadinya hujan salju. Hujan salju terjadi saat uap air naik ke atmosfer
+        bumi dan membentuk menjadi awan. Uap air akan bertambah hingga awan tersebut
+        akan pecah dengan menyebarkan titik-titik air. Namun karena suhu pada wilayah
+        kurang dari 0 derajad celcius, maka titik-titik air yang turun menjadi salju.'
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -3349,23 +3351,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 58
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 57
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 394
+      value: 441
       objectReference: {fileID: 0}
     - target: {fileID: 2052974348392100135, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -3540,17 +3547,22 @@ PrefabInstance:
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSize
-      value: 49
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 49
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -3881,17 +3893,22 @@ PrefabInstance:
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSize
-      value: 46
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 46
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -3911,7 +3928,7 @@ PrefabInstance:
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 8
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611371457856, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -4023,12 +4040,12 @@ PrefabInstance:
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.34
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.29
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
@@ -4103,12 +4120,12 @@ PrefabInstance:
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.96
+      value: 80.4
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}

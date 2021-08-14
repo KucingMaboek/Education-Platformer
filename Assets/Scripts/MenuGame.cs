@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuGame : UIController
 {
-    [SerializeField] public GameObject SFXButton, MusicButton, SFXButtonDis, MusicButtonDis, PauseWindow, StarCounter;
+    [SerializeField] public GameObject SFXButton, MusicButton, SFXButtonDis, MusicButtonDis, PauseWindow, StarCounter, HelpWIndow, TutorialWindow;
     public int nextChapter;
     public int nextStage;
     [HideInInspector] public int currentChapter;
@@ -15,8 +15,16 @@ public class MenuGame : UIController
     public int questionLeft = 2;
     public int currentStar = 0;
 
+    private bool pausePC = false;
+    private bool helpPC = false;
+
     public void Start()
     {
+        //print("P" + PlayerPrefs.GetInt("Tutorial"));
+        //if (PlayerPrefs.GetInt("Tutorial") != 1)
+        //{
+        //    TutorialWindow.SetActive(true);
+        //}
         if (GameManager.Instance.setting.BgmVolume == 0)
         {
             MusicButton.SetActive(false);
@@ -49,6 +57,11 @@ public class MenuGame : UIController
         {
             GameManager.Instance.PlayBgm("summer_theme");
         }
+    }
+
+    public void Update()
+    {
+        CheckPausePC();
     }
 
     public void SetSfxVolume()
@@ -118,11 +131,39 @@ public class MenuGame : UIController
         BGPanel.SetActive(true);
     }
 
+    public void CheckPausePC()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            GameManager.Instance.PlaySfx("button_pop");
+            if (pausePC == false)
+            {
+                Time.timeScale = 0f;
+                PauseWindow.SetActive(true);
+                BGPanel.SetActive(true);
+                pausePC = true;
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                PauseWindow.SetActive(false);
+                BGPanel.SetActive(false);
+                pausePC = false;
+                helpPC = false;
+                HelpWIndow.SetActive(false);
+            }
+        }
+        
+    }
+
     public void ButtonPauseClose()
     {
+        pausePC = false;
         Time.timeScale = 1f;
         PauseWindow.SetActive(false);
         BGPanel.SetActive(false);
+        helpPC = false;
+        HelpWIndow.SetActive(false);
     }
 
     public void Unpause()
@@ -140,5 +181,26 @@ public class MenuGame : UIController
         string sceneName = "Chapter_" + nextChapter + "_Stage_" + nextStage;
         GameManager.Instance.NewScene = sceneName;
         SceneManager.LoadScene("LoadingScene");
+    }
+
+    public void ButtonHelp()
+    {
+        GameManager.Instance.PlaySfx("button_pop");
+        if (helpPC)
+        {
+            helpPC = false;
+            HelpWIndow.SetActive(false);
+        }
+        else
+        {
+            helpPC = true;
+            HelpWIndow.SetActive(true);
+        }
+    }
+
+    public void CloseTutorial()
+    {
+        TutorialWindow.SetActive(false);
+        PlayerPrefs.SetInt("Tutorial", 1);
     }
 }

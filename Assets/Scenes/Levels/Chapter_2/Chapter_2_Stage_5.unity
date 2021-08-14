@@ -2956,12 +2956,12 @@ PrefabInstance:
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.96
+      value: 79
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
@@ -14474,12 +14474,12 @@ PrefabInstance:
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.34
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.29
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
@@ -14986,20 +14986,25 @@ PrefabInstance:
     - target: {fileID: 8953062611146565056, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_text
-      value: "Feedback: Soal 20:\n- Dapat diubah bentuknya dengan menggunakan cara
-        tertentu.\n- Bentuk benda padat tidak berubah meskipun dipindah-pindah.\r\n-
-        Ukuran benda padat tidak berubah meskipun dipindah-pindah\r.\n- Mempunyai
-        massa."
+      value: "Feedback: Soal 20:\n\u2022 Dapat diubah bentuknya dengan menggunakan
+        cara tertentu misal diukir, dibelah, dipotong\r\n\u2022 Bentuk benda padat
+        tidak berubah meskipun dipindah-pindah.\r\n\u2022 Ukuran benda padat tidak
+        berubah meskipun dipindah-pindah\r\n\u2022 Mempunyai massa\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611146565056, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSize
-      value: 55
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611146565056, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 55
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611146565056, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611146565056, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -15014,12 +15019,12 @@ PrefabInstance:
     - target: {fileID: 8953062611146565056, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 29
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611146565056, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 220
+      value: 252
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611164508816, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -15037,12 +15042,17 @@ PrefabInstance:
     - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSize
-      value: 60
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 60
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}

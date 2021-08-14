@@ -3178,12 +3178,12 @@ PrefabInstance:
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.96
+      value: 97.33
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 2.19
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
@@ -10822,12 +10822,12 @@ PrefabInstance:
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.34
+      value: 33.87
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.29
+      value: -1.86
       objectReference: {fileID: 0}
     - target: {fileID: 8861144090707877669, guid: 71e80e207e85960458fb36aaf3f65a51,
         type: 3}
@@ -11179,6 +11179,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4755738033951891834}
     m_Modifications:
+    - target: {fileID: 471473683893620223, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 778465027529704606, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -11190,34 +11195,38 @@ PrefabInstance:
       value: 'Feedback: Soal 9:
 
         Penyubliman merupakan proses perubahan wujud
-        dari padat menjadi gas atau sebaliknya. Kapur barus yang diletakkan di luar
-        ruangan lama kelaman akan habis karena perubahan wujud dari padat menjadi
-        gas. '
+        dari padat menjadi gas. Kapur barus yang diletakkan di luar ruangan lama
+        kelaman akan habis karena perubahan wujud dari padat menjadi gas.'
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSize
-      value: 60
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 60
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 32
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 32
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 1558215149935435697, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -11573,11 +11582,16 @@ PrefabInstance:
     - target: {fileID: 8953062610872553218, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_text
-      value: "Soal 10\nYuma sangat suka minum susu. Setiap malam yuma akan minum
-        susu sebelum tidur. Susu merupakan benda cair. Dibawah ini merupakan sifat
-        benda cair kecuali ....\n\r\nA. Bentuk benda cair tetap\r\nB. Menekan kesegala
-        arah\r\nC. Mengalir ketempat yang lebih rendah\r\nD. Meresap melalui celah-celah
-        kecil \r"
+      value: "Soal 10\nYuma sangat suka minum susu cair. Setiap malam Yuma akan minum
+        susu sebelum tidur. Susu cair merupakan benda berwujud cair. Di bawah ini
+        merupakan sifat benda cair kecuali ... .\n\r\nA. Bentuk benda cair tetap\r\nB.
+        Menekan kesegala arah\r\nC. Mengalir ketempat yang lebih rendah\r\nD. Meresap
+        melalui celah-celah kecil \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062610872553218, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 8953062610872553218, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -11592,17 +11606,17 @@ PrefabInstance:
     - target: {fileID: 8953062610872553218, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 46
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8953062610872553218, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 48
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 8953062610872553218, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 299
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611083517504, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -11672,21 +11686,26 @@ PrefabInstance:
     - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_text
-      value: "Soal 10\nYuma sangat suka minum susu. Setiap malam yuma akan minum
-        susu sebelum tidur. Susu merupakan benda cair. Dibawah ini merupakan sifat
-        benda cair kecuali ....\n\r\nA. Bentuk benda cair tetap\r\nB. Menekan kesegala
-        arah\r\nC. Mengalir ketempat yang lebih rendah\r\nD. Meresap melalui celah-celah
-        kecil \r"
+      value: "Soal 10\nYuma sangat suka minum susu cair. Setiap malam Yuma akan minum
+        susu sebelum tidur. Susu cair merupakan benda berwujud cair. Dibawah ini
+        merupakan sifat benda cair kecuali ....\n\r\nA. Bentuk benda cair tetap\r\nB.
+        Menekan kesegala arah\r\nC. Mengalir ketempat yang lebih rendah\r\nD. Meresap
+        melalui celah-celah kecil \r"
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSize
-      value: 60
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 60
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -11696,17 +11715,17 @@ PrefabInstance:
     - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 46
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 48
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611338243450, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 299
+      value: 318
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -11730,17 +11749,22 @@ PrefabInstance:
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSize
-      value: 60
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 60
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8953062611368246270, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}

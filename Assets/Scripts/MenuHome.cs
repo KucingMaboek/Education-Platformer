@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
 using UnityEngine.UI;
 
 public class MenuHome : UIController
@@ -7,7 +7,7 @@ public class MenuHome : UIController
     [SerializeField] private Slider bgmSlider;
     [SerializeField] private RectTransform settingContainer;
     [SerializeField] private RectTransform creditContainer;
-    [SerializeField] private GameObject backgroundPanel, SFXButton, MusicButton, SFXButtonDis, MusicButtonDis;
+    [SerializeField] private GameObject backgroundPanel, SFXButton, MusicButton, SFXButtonDis, MusicButtonDis, Env, Tiles, Logo, GroupUI;
 
     private bool SFX = true;
     private bool Music = true;
@@ -153,5 +153,12 @@ public class MenuHome : UIController
             GameManager.Instance.data.SetStageStatus(2, i, 0);
             GameManager.Instance.data.SetStageQuestStatus(2, i, 0);
         }
+    }
+
+    public void ButtonSfxSplash()
+    {
+        AudioSource a = SFXButton.GetComponent<AudioSource>();
+        a.Play();
+        UnityEngine.SceneManagement.SceneManager.LoadScene("HomeScene");
     }
 }

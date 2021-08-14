@@ -30,7 +30,7 @@ public class QuestWindow : UIController
             }
         }
         else
-        {
+        {            
             FeedbackWindow.SetActive(true);
             var VideoPlayer = WindowAnimasi.GetComponentInChildren<UnityEngine.Video.VideoPlayer>();
             VideoPlayer.Play();
