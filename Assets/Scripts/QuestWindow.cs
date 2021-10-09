@@ -19,6 +19,7 @@ public class QuestWindow : UIController
         if (answer)
         {
             FeedbackWindow.SetActive(false);
+            //StartCoroutine(AnimationWideIn((FeedbackWindow.GetComponent<RectTransform>()), 0.15f));
             QuestWindows.SetActive(false);
             if (menuGame.questionLeft <= 0)
             {
@@ -43,23 +44,24 @@ public class QuestWindow : UIController
         QuestContainer.SetActive(false);
         RightAnswer.SetActive(true);
         answer = false;
-        GameManager.Instance.PlaySfx("button_right_answer");
         --menuGame.questionLeft;
         ++menuGame.currentStar;
         menuGame.StarCounter.GetComponent<Text>().text = menuGame.currentStar.ToString();
+        GameManager.Instance.PlaySfx("button_right_answer");        
     }
 
     public void ButtonWrongAnswer()
     {
         QuestContainer.SetActive(false);
         WrongAnswer.SetActive(true);
-        GameManager.Instance.PlaySfx("button_wrong_answer");
         answer = false;
         --menuGame.questionLeft;
+        GameManager.Instance.PlaySfx("button_wrong_answer");        
     }
 
     public void StageComplete()
     {
+        //StartCoroutine(AnimationWideIn((CompleteWindow.GetComponent<RectTransform>()), 0.15f));
         CompleteWindow.SetActive(true);
         BGPanelNonInter.SetActive(true);
         GameManager.Instance.data.SetStageStatus(menuGame.nextChapter, menuGame.nextStage, 1);

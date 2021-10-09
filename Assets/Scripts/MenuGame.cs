@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 public class MenuGame : UIController
 {
     [SerializeField] public GameObject SFXButton, MusicButton, SFXButtonDis, MusicButtonDis, PauseWindow, StarCounter, HelpWIndow, TutorialWindow;
+    public RectTransform leaveWindow;
     public int nextChapter;
     public int nextStage;
+
     [HideInInspector] public int currentChapter;
     [HideInInspector] public int currentStage;
+
     public GameObject BGPanel;
     private bool SFX = true;
     private bool Music = true;
@@ -127,8 +130,9 @@ public class MenuGame : UIController
     public void ButtonPause()
     {
         Time.timeScale = 0f;
-        PauseWindow.SetActive(true);
+        //PauseWindow.SetActive(true);
         BGPanel.SetActive(true);
+        StartCoroutine(AnimationWideOut((PauseWindow.GetComponent<RectTransform>()), 0.15f));
     }
 
     public void CheckPausePC()
@@ -160,7 +164,8 @@ public class MenuGame : UIController
     {
         pausePC = false;
         Time.timeScale = 1f;
-        PauseWindow.SetActive(false);
+        //PauseWindow.SetActive(false);
+        StartCoroutine(AnimationWideIn((PauseWindow.GetComponent<RectTransform>()), 0.15f));
         BGPanel.SetActive(false);
         helpPC = false;
         HelpWIndow.SetActive(false);
@@ -202,5 +207,17 @@ public class MenuGame : UIController
     {
         TutorialWindow.SetActive(false);
         PlayerPrefs.SetInt("Tutorial", 1);
+    }
+
+    public void CloseConfirmLeave()
+    {
+        //BGPanel.SetActive(false);
+        StartCoroutine(AnimationWideIn(leaveWindow, 0.15f));
+    }
+
+    public void OpenConfirmWindow()
+    {
+        //BGPanel.SetActive(true);
+        StartCoroutine(AnimationWideOut(leaveWindow, 0.15f));
     }
 }

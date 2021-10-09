@@ -6,7 +6,7 @@ public class MenuHome : UIController
     [SerializeField] private Slider sfxSlider;
     [SerializeField] private Slider bgmSlider;
     [SerializeField] private RectTransform settingContainer;
-    [SerializeField] private RectTransform creditContainer, welcomeWindow;
+    [SerializeField] private RectTransform creditContainer, welcomeWindow, LeaveWindow, videoWindow;
     [SerializeField] private GameObject backgroundPanel, SFXButton, MusicButton, SFXButtonDis, MusicButtonDis, Env, Tiles, Logo, GroupUI;
 
     private bool SFX = true;
@@ -93,6 +93,32 @@ public class MenuHome : UIController
     {
         backgroundPanel.SetActive(false);
         StartCoroutine(AnimationWideIn(welcomeWindow, 0.15f));
+    }
+
+    public void CloseConfirmLeave()
+    {
+        backgroundPanel.SetActive(false);
+        StartCoroutine(AnimationWideIn(LeaveWindow, 0.15f));
+    }
+
+    public void OpenConfirmWindow()
+    {
+        backgroundPanel.SetActive(true);
+        StartCoroutine(AnimationWideOut(LeaveWindow, 0.15f));
+    }
+
+    public void CloseVideoWindow()
+    {
+        GameManager.Instance.setting.BgmVolume = 1;
+        backgroundPanel.SetActive(false);
+        StartCoroutine(AnimationWideIn(videoWindow, 0.15f));
+    }
+
+    public void OpenVideoWindow()
+    {
+        GameManager.Instance.setting.BgmVolume = 0;
+        backgroundPanel.SetActive(true);
+        StartCoroutine(AnimationWideOut(videoWindow, 0.15f));
     }
 
     public void SetSfxVolume()

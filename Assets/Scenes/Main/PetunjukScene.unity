@@ -177,18 +177,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Sound : Nyalakan/matikan sound effect
+  m_text: '1. Pause : Menjeda permainan
 
-    2. Music : Nyalakan/matikan
-    background music
+    2. Sound : Nyalakan/matikan sound effect
 
-    3. Bintang : didapat saat menjawab soal dengan benar
+    3.
+    Music : Nyalakan/matikan background music
 
-    4.
-    Heart : Nyawa permainan akan berkurang jika menabrak monster
-
-    5. Player :
-    jangan sampai menabrak monster'
+    4. Bintang : didapat saat menjawab
+    soal dengan benar'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec138df3b7b166746a3ea5214e056ce4, type: 2}
   m_sharedMaterial: {fileID: -1157434783760331208, guid: ec138df3b7b166746a3ea5214e056ce4,
@@ -217,7 +214,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 49.85
+  m_fontSize: 57.1
   m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -258,12 +255,12 @@ MonoBehaviour:
   m_margin: {x: 14.34329, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 138991717}
-    characterCount: 245
+    characterCount: 167
     spriteCount: 0
-    spaceCount: 37
-    wordCount: 35
+    spaceCount: 25
+    wordCount: 24
     linkCount: 0
-    lineCount: 8
+    lineCount: 7
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -922,7 +919,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: ea460316f72e8f54c85c034ea2f27e48, type: 3}
+  m_Texture: {fileID: 2800000, guid: e0272ffb5541b384a93e0498fb30cae3, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1531,7 +1528,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: ea460316f72e8f54c85c034ea2f27e48, type: 3}
+  m_Texture: {fileID: 2800000, guid: e0272ffb5541b384a93e0498fb30cae3, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1932,18 +1929,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '6. Monster : hindari!
+  m_text: '5. Heart : Nyawa permainan akan berkurang jika menabrak monster
 
-    7. Navigasi : untuk bergerak
+    6.
+    Navigasi : untuk bergerak
 
-    8. Tembak
-    : gunakan untuk mengalahkan monster
+    7. Tembak : gunakan untuk mengalahkan monster
 
-    9. Loncat : menghindari lubang
+    8.
+    Loncat : menghindari lubang
 
-    10.
-    Pause : menjeda permainan
+    9. Monster : hindari!
 
+    10. Player : karakter
+    pemain
 
 '
   m_isRightToLeft: 0
@@ -1974,7 +1973,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 57.1
+  m_fontSize: 49.95
   m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2015,12 +2014,12 @@ MonoBehaviour:
   m_margin: {x: 14.34329, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1281452589}
-    characterCount: 159
+    characterCount: 221
     spriteCount: 0
-    spaceCount: 27
-    wordCount: 21
+    spaceCount: 36
+    wordCount: 30
     linkCount: 0
-    lineCount: 7
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -2917,13 +2916,14 @@ MonoBehaviour:
     2. Soal : berisi pertanyaan yang harus dijawab'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec138df3b7b166746a3ea5214e056ce4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -1157434783760331208, guid: ec138df3b7b166746a3ea5214e056ce4,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4283248139
   m_fontColor: {r: 0.043137256, g: 0.18039216, b: 0.3019608, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2942,7 +2942,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 34
+  m_fontSize: 66.65
   m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2988,7 +2988,7 @@ MonoBehaviour:
     spaceCount: 23
     wordCount: 22
     linkCount: 0
-    lineCount: 4
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0

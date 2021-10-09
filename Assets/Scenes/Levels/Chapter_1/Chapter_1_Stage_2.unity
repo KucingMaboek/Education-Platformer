@@ -2041,6 +2041,8 @@ MonoBehaviour:
   - {fileID: 793408937}
   - {fileID: 1868673151}
   - {fileID: 2058569464}
+  prevButton: {fileID: 1117925086}
+  nextButton: {fileID: 2019066745}
   counter: 0
 --- !u!1001 &1675861291
 PrefabInstance:

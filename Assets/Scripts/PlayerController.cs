@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : UIController
 {
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
@@ -166,7 +166,7 @@ public class PlayerController : MonoBehaviour
     {
         Time.timeScale = 0f;
         BGPanelLose.SetActive(true);
-        PauseWindow.SetActive(true);
+        StartCoroutine(AnimationWideOut((PauseWindow.GetComponent<RectTransform>()), 0.15f));
     }
 
     //Pickup Coin

@@ -1477,6 +1477,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb63671cec07f147aad4a933a7564be, type: 3}
+--- !u!114 &834926515 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2493518045530258226, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4755738032736356152}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &836050463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2058,6 +2070,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1054520323}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1074197990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8953062609658963912, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4755738032736356152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1074197991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074197990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2db5190c92c9b41bbe8237e1625f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuestPages:
+  - {fileID: 1163972030}
+  - {fileID: 634018360}
+  - {fileID: 726686256}
+  - {fileID: 920052888}
+  - {fileID: 1786545126}
+  prevButton: {fileID: 1381796663}
+  nextButton: {fileID: 834926515}
+  counter: 0
 --- !u!1 &1163972030 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8953062611146565062, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
@@ -2208,6 +2247,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 758422f7f0a310048873ed8188131770, type: 3}
+--- !u!114 &1381796663 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3505904739179566521, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4755738032736356152}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1385137286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11744,6 +11795,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2493518045530258226, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1074197991}
+    - target: {fileID: 2493518045530258226, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonNextQuest
+      objectReference: {fileID: 0}
     - target: {fileID: 2968907746411688486, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -11953,8 +12014,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3505904739179566521, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1074197991}
+    - target: {fileID: 3505904739179566521, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ButtonPrevFeedback
+      value: ButtonPrevQuest
       objectReference: {fileID: 0}
     - target: {fileID: 3525957460281495663, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -12152,7 +12218,7 @@ PrefabInstance:
     - target: {fileID: 8953062610588446512, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: nextFeedback.Array.size
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8953062610588446512, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}

@@ -1657,7 +1657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &836905345
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1733,7 +1733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &858288586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11475,7 +11475,7 @@ PrefabInstance:
     - target: {fileID: 2258520095157022014, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2295924591438585729, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
@@ -11617,6 +11617,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3568525195479604854, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3602767896413818765, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_IsActive
@@ -11636,30 +11641,35 @@ PrefabInstance:
         B. Kapur
         barus yang diletakkan di luar ruangan
 
-        C. Es batu yangdipanaskan
+        C. Es batu yang dipanaskan
 
         D.
         Mentega yang dipanaskan'
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
       value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5438308909195326185, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
+        type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 209
+      value: 206
       objectReference: {fileID: 0}
     - target: {fileID: 8919015869361226123, guid: 32e1dabdcb23c3d4da33228f3c83e49a,
         type: 3}

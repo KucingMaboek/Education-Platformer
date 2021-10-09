@@ -443,6 +443,8 @@ MonoBehaviour:
   QuestPages:
   - {fileID: 1832961172}
   - {fileID: 718331689}
+  prevButton: {fileID: 545307763}
+  nextButton: {fileID: 2059390465}
   counter: 0
 --- !u!1 &176762634
 GameObject:
@@ -954,6 +956,8 @@ MonoBehaviour:
   QuestPages:
   - {fileID: 713673583}
   - {fileID: 825584806}
+  prevButton: {fileID: 176762636}
+  nextButton: {fileID: 44864985}
   counter: 0
 --- !u!224 &285270591 stripped
 RectTransform:
@@ -3496,6 +3500,8 @@ MonoBehaviour:
   QuestPages:
   - {fileID: 1022543164}
   - {fileID: 925814114}
+  prevButton: {fileID: 1184420463}
+  nextButton: {fileID: 299047425}
   counter: 0
 --- !u!1 &1279389359 stripped
 GameObject:
@@ -3524,6 +3530,8 @@ MonoBehaviour:
   QuestPages:
   - {fileID: 1489693765}
   - {fileID: 763696506}
+  prevButton: {fileID: 1071140886}
+  nextButton: {fileID: 372526231}
   counter: 0
 --- !u!1001 &1283449039
 PrefabInstance:
