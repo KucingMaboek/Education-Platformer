@@ -15,7 +15,16 @@ public class MenuHome : UIController
 
     private void Start()
     {
-        GameManager.Instance.PlayBgm("menu_theme");
+        try
+        {
+            GameManager.Instance.PlayBgm("menu_theme");
+        }
+        catch (System.Exception)
+        {
+
+            throw;
+        }
+        
         InitiateGame();
 
         if (!GameManager.Instance.isWelcomeWindow)
